@@ -19,7 +19,10 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'surname',
         'email',
+        'username',
+        'phone',
         'password',
     ];
 
@@ -41,4 +44,10 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    //moteitor
+    // methodo para encriptar las password
+    public function setPasswordAttribute($value){   //!!importante el nombre de la function esta reservado para eloquente (No accepta cualquier nombre)
+        $this->attributes['password']=bcrypt($value);
+    }
 }

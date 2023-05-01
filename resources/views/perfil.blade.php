@@ -13,12 +13,13 @@
     <!-- end header section -->
 </div>
 
+<!-- Navegador Vertical del Usuario Autenticado -->
 @include('users.navbar')
+<!-- fin -->
 
-
-  <!-- dinamic [users] section -->
- @yield('content')
-  <!--  section -->
+  <!--  section contenido de usuario autenticado -->
+@yield('content')
+  <!--  section fin  -->
 
   <!-- footer section -->
   @include('layouts.footer')

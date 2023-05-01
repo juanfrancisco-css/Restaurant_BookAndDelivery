@@ -31,7 +31,7 @@ function obtenerDiaActual() {
       
       default:
        offer=" de disfrutar";
-       btn="Ver el Menu";
+       btn="<a href='/menu'>Ver el Menu</a>";
     }
     document.getElementById('btn-dia').innerHTML=btn;
 
@@ -71,7 +71,7 @@ document.getElementById('oferta').innerHTML=offer;
       
       default:
        offer=" Miercoles y Jueves dia de la Pizza ";
-       btn="Ver el Menu";
+       btn="<a href='/menu'>Ver el Menu</a>";
     }
     document.getElementById('btn-pizza').innerHTML=btn;
     return offer;

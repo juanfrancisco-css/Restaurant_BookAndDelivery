@@ -11,8 +11,8 @@
   <ul>
     <li><a href="{{ route('perfil-contacto') }}">Mi cuenta</a>
       <ul>
-        <li><a href="{{ route('perfil-contacto') }}">Información Personal</a></li>
-        <li><a href="{{ route('perfil-direccion') }}">Dirección de Contacto </a></li>
+        <li><a href="{{ route('perfil-contacto') }}">Perfil</a></li>
+        <li><a href="{{ route('perfil-direccion') }}">Dirección  </a></li>
         
       </ul>
     </li>
@@ -35,6 +35,6 @@
         <li><a href="#">Contactar al soporte técnico</a></li>
       </ul>
     </li>
-    <li><a href="#">Cerrar sesión</a></li>
+    <li><a href="{{ route('logout') }} ">Cerrar sesión</a></li>
   </ul>
 </div>
